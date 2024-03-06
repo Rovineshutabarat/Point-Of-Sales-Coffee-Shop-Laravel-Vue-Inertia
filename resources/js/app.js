@@ -1,7 +1,8 @@
 import axios from "axios";
 import { createApp, h } from "vue";
-import { createInertiaApp } from "@inertiajs/vue3";
+import { Link, createInertiaApp } from "@inertiajs/vue3";
 import { createPinia } from "pinia";
+import Icon from "./components/common/Icon.vue";
 
 const pinia = createPinia();
 
@@ -12,6 +13,8 @@ createInertiaApp({
     },
     setup({ el, App, props, plugin }) {
         createApp({ render: () => h(App, props) })
+            .component("Link", Link)
+            .component("Icon", Icon)
             .use(pinia)
             .use(plugin)
             .mount(el);

@@ -1,6 +1,6 @@
 <script>
-import SideNavbar from "../Components/Generic/AdminLayoutComponent/SideNavbar.vue";
-import TopNavbar from "../Components/Generic/AdminLayoutComponent/TopNavbar.vue";
+import SideNavbar from "../components/adminpage/adminLayout/SideNavbar.vue";
+import TopNavbar from "../components/adminpage/adminLayout/TopNavbar.vue";
 
 export default {
     components: { SideNavbar, TopNavbar },

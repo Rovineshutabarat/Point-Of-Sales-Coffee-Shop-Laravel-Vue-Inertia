@@ -1,6 +1,4 @@
 <script>
-import { Link } from "@inertiajs/vue3";
-
 export default {
     data() {
         return {
@@ -18,9 +16,6 @@ export default {
                 "hover:bg-[#0f0f0f]": this.$page.url !== currentUrl,
             });
         },
-    },
-    components: {
-        Link,
     },
 };
 </script>

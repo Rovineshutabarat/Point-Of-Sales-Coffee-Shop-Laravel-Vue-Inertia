@@ -21,7 +21,7 @@ export default {
                     "base-100": "#F8FAFB",
                 },
                 dark: {
-                    ...require("daisyui/src/theming/themes")["dark"],
+                    ...require("daisyui/src/theming/themes")["forest"],
                     primary: "#151515",
                     secondary: "#1BA019",
                     accent: "#151C15",

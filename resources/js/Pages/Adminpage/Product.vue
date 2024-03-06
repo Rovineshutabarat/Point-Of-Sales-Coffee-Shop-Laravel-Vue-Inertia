@@ -1,13 +1,11 @@
 <script>
-import AdminLayout from "../../Layouts/AdminLayout.vue";
+import AdminLayout from "../../layouts/AdminLayout.vue";
 
 export default {
-    components: { AdminLayout },
+    layout: AdminLayout,
 };
 </script>
 
 <template>
-    <AdminLayout>
-        <h1>Product Page</h1>
-    </AdminLayout>
+    <h1>Product Page</h1>
 </template>
