@@ -11,6 +11,7 @@ export default {
         dark: String,
         enableHover: Boolean || false,
         customClass: String || "",
+        alt: String,
     },
     computed: {
         setImages() {
@@ -30,7 +31,7 @@ export default {
         v-if="enableHover"
         class="p-2 hover:bg-base-100 rounded-full cursor-pointer"
     >
-        <img :src="setImages" alt="" class="h-5 w-5" />
+        <img :src="setImages" :alt="alt" class="h-5 w-5" />
     </div>
     <img v-else :src="setImages" alt="" class="h-5 w-5" :class="customClass" />
 </template>

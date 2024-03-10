@@ -1,14 +1,22 @@
 <script>
 import { useStore } from "../../../store/store.js";
-import ThemeButton from "./partials/ThemeButton.vue";
-import SitePath from "./partials/SitePath.vue";
-import ProfileMenu from "./partials/ProfileMenu.vue";
+import MenuButton from "./partials/MenuButton.vue";
+import PageSitePath from "./partials/PageSitePath.vue";
+import ThemeSwitcher from "./partials/ThemeSwitcher.vue";
+import FullScreenButton from "./partials/FullScreenButton.vue";
+import NotificationButton from "./partials/NotificationButton.vue";
+import TaskButton from "./partials/TaskButton.vue";
+import ProfileButton from "./partials/ProfileButton.vue";
 
 export default {
     components: {
-        ThemeButton,
-        SitePath,
-        ProfileMenu,
+        MenuButton,
+        PageSitePath,
+        ThemeSwitcher,
+        FullScreenButton,
+        NotificationButton,
+        TaskButton,
+        ProfileButton,
     },
     data() {
         return {
@@ -26,28 +34,17 @@ export default {
         class="flex justify-between text-sm items-center p-2 rounded-lg px-5 mt-2 bg-primary shadow"
     >
         <div class="flex justify-center items-center gap-x-5">
-            <Icon
-                light="https://img.icons8.com/material-sharp/24/menu--v1.png"
-                dark="https://img.icons8.com/material-rounded/24/FFFFFF/menu--v1.png"
-                :enableHover="true"
-            />
-            <SitePath />
+            <MenuButton />
+            <PageSitePath />
         </div>
-        <div class="flex justify-center items-center gap-x-10">
-            <div class="flex justify-center items-center gap-x-2">
-                <ThemeButton :handleClick="store.changeTheme" />
-                <Icon
-                    light="https://img.icons8.com/material-sharp/24/menu--v1.png"
-                    dark="https://img.icons8.com/material-rounded/24/FFFFFF/menu--v1.png"
-                    :enableHover="true"
-                />
-                <Icon
-                    light="https://img.icons8.com/material-sharp/24/menu--v1.png"
-                    dark="https://img.icons8.com/material-rounded/24/FFFFFF/menu--v1.png"
-                    :enableHover="true"
-                />
+        <div class="flex justify-center items-center gap-x-14">
+            <div class="flex justify-center items-center gap-x-3">
+                <ThemeSwitcher />
+                <FullScreenButton />
+                <NotificationButton />
+                <TaskButton />
             </div>
-            <ProfileMenu />
+            <ProfileButton />
         </div>
     </div>
 </template>

@@ -1,9 +1,15 @@
 <script>
 import AdminLayout from "../../layouts/AdminLayout.vue";
 
-export default { layout: AdminLayout };
+export default {
+    components: {
+        AdminLayout,
+    },
+};
 </script>
 
 <template>
-    <h1>Dashboard Page</h1>
+    <AdminLayout>
+        <h1>Dashboard Page</h1>
+    </AdminLayout>
 </template>
