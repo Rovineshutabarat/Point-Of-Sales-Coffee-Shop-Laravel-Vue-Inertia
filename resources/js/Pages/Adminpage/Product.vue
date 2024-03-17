@@ -1,8 +1,7 @@
 <script>
-import AdminLayout from "../../layouts/AdminLayout.vue";
-
+import adminLayout from "../../layouts/admin-layout.vue";
 export default {
-    layout: AdminLayout,
+    layout: adminLayout,
 };
 </script>
 

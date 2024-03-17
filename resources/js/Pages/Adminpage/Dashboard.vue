@@ -1,15 +1,23 @@
 <script>
-import AdminLayout from "../../layouts/AdminLayout.vue";
+import adminLayout from "../../layouts/admin-layout.vue";
+import { useStore } from "../../store/store.js";
+import card from "../../components/adminpage/dashboard/card.vue";
 
 export default {
     components: {
-        AdminLayout,
+        adminLayout,
+        card,
+    },
+    data() {
+        return {
+            store: useStore(),
+        };
     },
 };
 </script>
 
 <template>
-    <AdminLayout>
-        <h1>Dashboard Page</h1>
-    </AdminLayout>
+    <adminLayout>
+        <card />
+    </adminLayout>
 </template>

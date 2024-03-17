@@ -9,13 +9,16 @@ use Illuminate\Support\Facades\Redirect;
 
 class TaskController extends Controller
 {
+    public function index()
+    {
+        return Task::all();
+    }
     public function store(Request $request)
     {
         $createTask = Task::create($request->validate(
             [
                 "title" => "required|string",
-                "description" => "nullable|string|nullable",
-                "deadline" => "date|nullable"
+                "status" => "boolean|nullable",
             ]
         ));
         if ($createTask) {

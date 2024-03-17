@@ -11,16 +11,10 @@ export const useStore = defineStore("store", {
         };
     },
     actions: {
-        setTheme() {
-            document.documentElement.setAttribute(
-                "data-theme",
-                localStorage.getItem("theme")
-            );
-        },
         changeTheme() {
             this.theme = this.theme === "light" ? "dark" : "light";
             localStorage.setItem("theme", this.theme);
-            this.setTheme();
+            document.documentElement.setAttribute("data-theme=", this.theme);
         },
     },
 });

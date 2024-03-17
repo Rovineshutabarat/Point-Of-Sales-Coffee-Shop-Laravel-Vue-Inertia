@@ -3,6 +3,33 @@
 @tailwind utilities;
 
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
+}
+
+.light {
+    --primary: 243, 245, 246;
+    --secondary: 32, 199, 30;
+    --accent: 200, 236, 202;
+    --neutral: 5, 5, 5;
+    --base-100: 248, 250, 251;
+    --text-color: 8, 8, 8;
+}
+
+.dark {
+    --primary: 21, 21, 21;
+    --secondary: 27, 160, 25;
+    --accent: 21, 28, 21;
+    --neutral: 5, 5, 5;
+    --base-100: 5, 5, 5;
+    --text-color: 255, 255, 255;
+}
+
+.btn-sm {
+    @apply bg-black;
+}
+
+.icon {
+    @apply p-2 hover:bg-base-100 rounded-full cursor-pointer;
 }

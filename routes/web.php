@@ -9,4 +9,5 @@ Route::prefix("adminpage")->name("adminpage.")->group(function () {
     Route::get("/dashboard", [DashboardController::class, "index"])->name("dashboard");
     Route::get("/product", [ProductController::class, "index"])->name("product");
     Route::post("/task", [TaskController::class, "store"])->name("task.create");
+    Route::get("/task", [TaskController::class, "index"])->name("task");
 });

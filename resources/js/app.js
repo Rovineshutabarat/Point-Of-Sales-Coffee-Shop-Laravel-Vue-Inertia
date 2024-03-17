@@ -2,7 +2,6 @@ import axios from "axios";
 import { createApp, h } from "vue";
 import { Link, createInertiaApp } from "@inertiajs/vue3";
 import { createPinia } from "pinia";
-import Icon from "./components/common/Icon.vue";
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 
@@ -20,7 +19,6 @@ createInertiaApp({
                 showCloseButtonOnHover: true,
             })
             .component("Link", Link)
-            .component("Icon", Icon)
             .use(pinia)
             .use(plugin)
             .mount(el);

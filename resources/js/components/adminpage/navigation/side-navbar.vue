@@ -26,7 +26,7 @@ export default {
             <img
                 src="https://img.icons8.com/ios-glyphs/30/FFFFFF/amazon-alexa-logo.png"
                 alt="Logo.png"
-                class="h-9 w-9"
+                class="h-9 w-9 invert-0"
             />
             <h1 class="text-2xl font-medium">PROOKED</h1>
         </div>
@@ -41,7 +41,7 @@ export default {
                     <img
                         src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/home.png"
                         alt=""
-                        class="h-5 w-5"
+                        class="h-5 w-5 invert-0"
                     />
                     <h1 class="text-[14px] font-extralight">Dashboard</h1>
                 </Link>
@@ -53,7 +53,7 @@ export default {
                     <img
                         src="https://img.icons8.com/glyph-neue/64/FFFFFF/product.png"
                         alt=""
-                        class="h-5 w-5"
+                        class="h-5 w-5 invert-0"
                     />
                     <h1 class="text-[14px] font-extralight">Product</h1>
                 </Link>
